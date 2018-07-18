@@ -81,18 +81,23 @@
 \frametitle{Motiva\c{c}\~ao}
 \pause
 
-\cite{jaques2012}: A integra\c{c}\~ao de um reconhecedor de emo\c{c}\~oes com STI pode auxiliar grandes desafios da \'area de IE, 
-viabilizando recomenda\c{c}\~oes mais inteligente, personalizada e prop\'icia para o estado emocional do estudante.
 
 \end{frame}
 
 
 \begin{frame}
 \frametitle{Objetivos}
-\begin{block}{Objetivos do trabalho:}
+\begin{block}{Objetivo Geral:}
 \begin{itemize}
 \pause
 \item Propor uma arquitetura de detec\c{c}\~ao autom\'atica de emo\c{c}\~oes para AVA por meio de reconhecimento autom\'atico de express\~oes faciais;
+\end{itemize}
+\end{block}
+
+
+\frametitle{Objetivos}
+\begin{block}{Objetivos Específicos:}
+\begin{itemize}
 \pause
 \item Analisar por meio de estat\'istica descritiva um estudo de caso com dados obtidos a partir da arquitetura, 
 medindo correla\c{c}\~oes entre as emo\c{c}\~oes detectadas e o desempenho obtido nas quest\~oes.
@@ -101,49 +106,10 @@ medindo correla\c{c}\~oes entre as emo\c{c}\~oes detectadas e o desempenho obtid
 \end{frame}
 
 
-\section{Conceitos}
+
+\section{Abordagem Proposta}
 \begin{frame}
-\frametitle{Conceitos}
-\pause
-\begin{block}{Express\~ao Facial Emocional}
-\cite{ekman1994} verificou a exist\^encia de um grupo de emo\c{c}\~oes b\'asicas: raiva, felicidade, tristeza, desprezo, medo e surpresa, 
-que possuem a mesma express\~ao facial independente da cultura dos indiv\'iduos.
-\end{block}
-
-\begin{figure}
-\centering
-\includegraphics[scale=0.27]{figuras/ekman-emotions.png}
-\end{figure}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Conceitos}
-\begin{block}{Entropia}
-Uma medida de dispers\~ao que seu resultado implica que quanto maior a entropia, maior \'e a uniformidade da distribui\c{c}\~ao dos dados. 
-\end{block}
-\begin{figure}
-\centering
-\includegraphics[scale=0.35]{figuras/entropiaSBIE.png}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{Conceitos}
-\begin{block}{Correla\c{c}\~ao de Pearson}
-Mede o grau de correla\c{c}\~ao (for\c{c}a e dire\c{c}\~ao) entre um par de vari\'averis aleat\'orias.
-\end{block}
-\begin{figure}
-\centering
-\includegraphics[scale=0.4]{figuras/pearson.png}
-\end{figure}
-
-\end{frame}
-
-
-\section{M\'etodo Proposto}
-\begin{frame}
-\frametitle{M\'etodo Proposto}
+\frametitle{Abordagem Proposta}
 \pause
 \begin{block}{Plataforma Educacional}
 Permite a coleta de imagens faciais e das atividades dos alunos como a sele\c{c}\~ao de 
@@ -217,253 +183,32 @@ gerando para cada quest\~ao:
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Resultados e Discuss\~oes}
-\begin{table}[]\footnotesize
-\centering
-\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
-e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
-\label{my-label}
-\begin{tabular}{|c|c|c|}
-\hline
-                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
-\textbf{Tristeza}     & \textbf{-0.33}                & 0.27                          \\ \hline
-\textbf{Neutralidade} & \textbf{0.36}                 & \textbf{-0.48}                \\ \hline
-\textbf{Desprezo}     & -0.15                         & \textbf{0.30}                 \\ \hline
-Desgosto              & -0.13                         & 0.07                          \\ \hline
-Raiva                 & -0.14                         & -0.08                         \\ \hline
-Surpresa              & 0.07                          & 0.24                          \\ \hline
-Medo                  & -0.06                         & 0.14                          \\ \hline
-\textbf{Felicidade}   & -0.14                         & \textbf{0.31}                 \\ \hline
-\textbf{Entropia}     & -0.12                         & \textbf{0.36}                 \\ \hline
-\end{tabular}
-\end{table}
-\end{frame}
-
-
-%\begin{frame}
-%\frametitle{Resultados e Discuss\~oes}
-%\begin{block}{Estimular emo\c{c}\~oes diferentes da neutralidade durante a avalia\c{c}\~ao favorece o desempenho dos alunos}
-%\begin{itemize}
-%\item Neutralidade possui uma correla\c{c}\~ao negativa com a propor\c{c}\~ao de acertos;
-%\item Felicidade e desprezo possui correla\c{c}\~ao positiva com a propor\c{c}\~ao de acertos;
-%\item Entropia das emo\c{c}\~oes possui correla\c{c}\~ao positiva com a propor\c{c}\~ao de acertos;
-%\end{itemize}
-%\end{block}
-
-%\end{frame}
-
-\begin{frame}
-\frametitle{Resultados e Discuss\~oes}
-\begin{block}{Estimular emo\c{c}\~oes diferentes da neutralidade durante a avalia\c{c}\~ao favorece o desempenho dos alunos}
-\begin{itemize}
-\pause
-\item Neutralidade possui uma correla\c{c}\~ao negativa com a propor\c{c}\~ao de acertos;
-\end{itemize}
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Resultados e Discuss\~oes}
-\begin{table}[]\footnotesize
-\centering
-\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
-e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
-\label{my-label}
-\begin{tabular}{|c|c|c|}
-\hline
-                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
-Tristeza	     & -0.33                & 0.27                          \\ \hline
-\small \textbf{Neutralidade} & 0.36                 & \small \textbf{-0.48}                \\ \hline
-Desprezo     		& -0.15                         & 0.30                 \\ \hline
-Desgosto              & -0.13                         & 0.07                          \\ \hline
-Raiva                 & -0.14                         & -0.08                         \\ \hline
-Surpresa              & 0.07                          & 0.24                          \\ \hline
-Medo                  & -0.06                         & 0.14                          \\ \hline
-Felicidade   		& -0.14                         & 0.31                 \\ \hline
-Entropia     		& -0.12                         & 0.36                 \\ \hline
-\end{tabular}
-\end{table}
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{Resultados e Discuss\~oes}
-\begin{block}{Estimular emo\c{c}\~oes diferentes da neutralidade durante a avalia\c{c}\~ao favorece o desempenho dos alunos}
-\begin{itemize}
-\item Neutralidade possui uma correla\c{c}\~ao negativa com a propor\c{c}\~ao de acertos;
-\pause
-\item Felicidade e desprezo possui correla\c{c}\~ao positiva com a propor\c{c}\~ao de acertos.
-\end{itemize}
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Resultados e Discuss\~oes}
-\begin{table}[]\footnotesize
-\centering
-\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
-e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
-\label{my-label}
-\begin{tabular}{|c|c|c|}
-\hline
-                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
-Tristeza	     & -0.33                & 0.27                          \\ \hline
-Neutralidade & 0.36                 & -0.48                \\ \hline
-\small \textbf{Desprezo}     		& -0.15                         & \small \textbf{0.30}                 \\ \hline
-Desgosto              & -0.13                         & 0.07                          \\ \hline
-Raiva                 & -0.14                         & -0.08                         \\ \hline
-Surpresa              & 0.07                          & 0.24                          \\ \hline
-Medo                  & -0.06                         & 0.14                          \\ \hline
-\small \textbf{Felicidade}   		& -0.14                         & \small \textbf{0.31}                 \\ \hline
-Entropia     		& -0.12                         & 0.36                 \\ \hline
-\end{tabular}
-\end{table}
-\end{frame}
-
-
-
-
-\begin{frame}
-\frametitle{Resultados e Discuss\~oes}
-\begin{block}{Estimular emo\c{c}\~oes diferentes da neutralidade durante a avalia\c{c}\~ao favorece o desempenho dos alunos}
-\begin{itemize}
-\item Neutralidade possui uma correla\c{c}\~ao negativa com a propor\c{c}\~ao de acertos;
-\item Felicidade e desprezo possui correla\c{c}\~ao positiva com a propor\c{c}\~ao de acertos;
-\pause
-\item Entropia das emo\c{c}\~oes possui correla\c{c}\~ao positiva com a propor\c{c}\~ao de acertos.
-\end{itemize}
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Resultados e Discuss\~oes}
-\begin{table}[]\footnotesize
-\centering
-\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
-e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
-\label{my-label}
-\begin{tabular}{|c|c|c|}
-\hline
-                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
-Tristeza	     & -0.33                & 0.27                          \\ \hline
-Neutralidade & 0.36                 & -0.48                \\ \hline
-Desprezo     		& -0.15                         & 0.30                 \\ \hline
-Desgosto              & -0.13                         & 0.07                          \\ \hline
-Raiva                 & -0.14                         & -0.08                         \\ \hline
-Surpresa              & 0.07                          & 0.24                          \\ \hline
-Medo                  & -0.06                         & 0.14                          \\ \hline
-Felicidade   		& -0.14                         & 0.31                 \\ \hline
-\small \textbf{Entropia}     		& -0.12                         & \small \textbf{0.36}                 \\ \hline
-\end{tabular}
-\end{table}
-\end{frame}
-
-
-
-
-%\begin{frame}
-%\frametitle{Resultados e Discuss\~oes}
-%\begin{block}{Neutralidade}
-%\begin{itemize}
-%\item A emo\c{c}\~ao mais frequente;
-%\item Ind\'{i}cio da neutralidade assemelhar com estado de concentra\c{c}\~ao;
-%\item Neutralidade possui uma correla\c{c}\~ao positiva com quest\~oes dif\'{i}ceis;
-%\item Importante identificar os casos diferentes de neutralidade por serem menos frequentes 
-%e indicar alguma oportunidade de um tutor inteligente atuar;
-%\end{itemize}
-%\end{block}
-
-%\end{frame}
-
-
-
-
-
-
-
-
-\begin{frame}
-\frametitle{Resultados e Discuss\~oes}
-\begin{block}{Neutralidade}
-\begin{itemize}
-\pause
-\item A emo\c{c}\~ao mais frequente;
-\pause
-\item Ind\'{i}cio da neutralidade assemelhar com estado de concentra\c{c}\~ao;
-\pause
-\item Neutralidade possui uma correla\c{c}\~ao positiva com quest\~oes dif\'{i}ceis;
-
-\end{itemize}
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Resultados e Discuss\~oes}
-\begin{table}[]\footnotesize
-\centering
-\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
-e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
-\label{my-label}
-\begin{tabular}{|c|c|c|}
-\hline
-                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
-Tristeza	     & -0.33                & 0.27                          \\ \hline
-\small \textbf{Neutralidade} & \small \textbf{0.36}                 & -0.48                \\ \hline
-Desprezo     		& -0.15                         & 0.30                 \\ \hline
-Desgosto              & -0.13                         & 0.07                          \\ \hline
-Raiva                 & -0.14                         & -0.08                         \\ \hline
-Surpresa              & 0.07                          & 0.24                          \\ \hline
-Medo                  & -0.06                         & 0.14                          \\ \hline
-Felicidade   		& -0.14                         & 0.31                 \\ \hline
-Entropia     		& -0.12                         & 0.36                 \\ \hline
-\end{tabular}
-\end{table}
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{Resultados e Discuss\~oes}
-\begin{block}{Neutralidade}
-\begin{itemize}
-\item A emo\c{c}\~ao mais frequente;
-\item Ind\'{i}cio da neutralidade assemelhar com estado de concentra\c{c}\~ao;
-\item Neutralidade possui uma correla\c{c}\~ao positiva com quest\~oes dif\'{i}ceis;
-\pause
-\item Importante identificar os casos diferentes de neutralidade por serem menos frequentes 
-e indicar alguma oportunidade de um tutor inteligente atuar.
-\end{itemize}
-\end{block}
-
-\end{frame}
-
 
 %FIM RESULTADOS E DISCUSSAO
 
 
-
-
-
-
-\section{Trabalhos Futuros}
+\section{Conclusão}
 \begin{frame}
-\frametitle{Trabalhos Futuros}
+\frametitle{Resultados e Discuss\~oes}
 \pause
+Foi realizado um pr\'{e}-processamento utilizando os dados da detec\c{c}\~ao das emoc\~oes e das intera\c{c}\~oes com a plataforma dos 27 alunos 
+gerando para cada quest\~ao:
+
 \begin{itemize}
-\item Investigar a mudan\c{c}a temporal dos estados emocionais dos alunos diante de est\'{i}mulos produzidos por diferentes objetos de aprendizagem;
 \pause
-\item A implementa\c{c}\~ao de uma heur\'istica que considera o estado emocional para fornecer ajuda sob demanda;
+\item A propor\c{c}\~ao de acertos;
 \pause
-\item Investigar alternativas para amenizar erros de classifica\c{c}\~ao e melhorar acur\'acia do \textit{framework}.
+\item O n\'{i}vel de dificuldade;
+\pause
+\item A m\'{e}dia das probabilidades para cada emoc\~ao detectada;
+\pause
+\item A entropia.
 \end{itemize}
 
 \end{frame}
+
+
+
 
 \begin{frame}{Referencias}
 \frametitle{Refer\^encias}
@@ -475,10 +220,10 @@ e indicar alguma oportunidade de um tutor inteligente atuar.
 \section{Agradecimentos}
  \begin{frame}{Agradecimentos}
 \begin{itemize}
- \item Esta pesquisa foi parcialmente financiada por intermédio de um projeto de P\&D com a
-Samsung Eletr\^{o}nica da Amaz\^{o}nia Ltda; 
-\item Os autores Anderson Cruz e Tiago Thompsen
-Primo s\~ao bolsistas CAPES e agradecem pelo​ ​apoio​ ​financeiro ​e​ ​concess\~ao​ ​de​ ​bolsa. 
+ \item Ao orientador: prof. Barreto; 
+\item A banca: prof. Elaine e prof. Daniel;
+\item A minha companheira: Giselle;
+\item A plateia;
 \end{itemize}
 
 \end{frame}

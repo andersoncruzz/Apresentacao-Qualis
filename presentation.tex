@@ -62,23 +62,9 @@
 \end{frame}
 
 \section{Introdu\c{c}\~ao}
-%\section{Motiva\c{c}\~ao}
-
-%\begin{frame}
-%\frametitle{Motiva\c{c}\~ao}
-%\begin{itemize}
-%\item Diversos psic\'ologos e pedagogos acreditam que o processo de cogni\c{c}\~ao n\~ao pode ser separado do afetivo:
-%	\begin{itemize}	
-%	\item \cite{vygotsky1986}: prop\~oe uma uni\~ao entre os processos intelectuais, evolutivos e afetivos, e  separa\c{c}\~ao gera lacunas;
-%	\item \cite{piaget1989}: afetividade alimenta a atividade intelectual, isto \'e, n\~ao h\'a processo cognitivo sem afetivo;
-%	\item \cite{izard1984}: emo\c{c}\~oes negativas prejudicam o desempenho do estudante em tarefas cognitivas e emo\c{c}\~oes 
-%	positivas possuem um efeito contr\'ario;	
-%	\end{itemize}
-%\end{itemize}
-%\end{frame}
 
 \begin{frame}
-\frametitle{Motiva\c{c}\~ao}
+\frametitle{Motivação}
 \pause
 
 
@@ -90,7 +76,7 @@
 \begin{block}{Objetivo Geral:}
 \begin{itemize}
 \pause
-\item Propor uma arquitetura de detec\c{c}\~ao autom\'atica de emo\c{c}\~oes para AVA por meio de reconhecimento autom\'atico de express\~oes faciais;
+\item Propor um método para reconhecer emoção humana por expressão facial para classificar emoções básicas em múltiplas faces de uma imagem e comparar a eficácia em cenários de uso real;
 \end{itemize}
 \end{block}
 
@@ -99,8 +85,11 @@
 \begin{block}{Objetivos Específicos:}
 \begin{itemize}
 \pause
-\item Analisar por meio de estat\'istica descritiva um estudo de caso com dados obtidos a partir da arquitetura, 
-medindo correla\c{c}\~oes entre as emo\c{c}\~oes detectadas e o desempenho obtido nas quest\~oes.
+ \item Propor técnicas de eliminação de ruídos e detecção com recorte das diversas faces de uma imagem;
+ \pause
+ \item Classificar cada face detectada separadamente estimando a probabilidade para cada emoção básica;
+ \pause
+ \item Avaliar experimentalmente a solução proposta visando a comparação da eficácia.
 \end{itemize}
 \end{block}
 \end{frame}
@@ -128,12 +117,54 @@ Recebe os dados da \textit{Plataforma Educacional} e do \textit{Classificador de
 \end{frame}
 
 
-
 \begin{frame}
-\frametitle{M\'etodo Proposto}
+\frametitle{Abordagem Proposta}
 \begin{figure}
 \centering
-\includegraphics[scale=0.35]{figuras/diagrama.png}
+\includegraphics[scale=0.37]{figuras/arquitetura_1.png}
+%\caption{Abordagem Proposta}
+\label{fig:arquitetura1}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Abordagem Proposta}
+\begin{figure}
+\centering
+\includegraphics[scale=0.37]{figuras/arquitetura_2.png}
+%\caption{Abordagem Proposta}
+\label{fig:arquitetura2}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Abordagem Proposta}
+\begin{figure}
+\centering
+\includegraphics[scale=0.37]{figuras/arquitetura_3.png}
+%\caption{Abordagem Proposta}
+\label{fig:arquitetura3}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Abordagem Proposta}
+\begin{figure}
+\centering
+\includegraphics[scale=0.37]{figuras/arquitetura_4.png}
+%\caption{Abordagem Proposta}
+\label{fig:arquitetura4}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Abordagem Proposta}
+\begin{figure}
+\centering
+\includegraphics[scale=0.17]{figuras/arquitetura.png}
+\caption{Solução Proposta}
+\label{fig:arquitetura}
 \end{figure}
 \end{frame}
 
@@ -189,24 +220,34 @@ gerando para cada quest\~ao:
 
 \section{Conclusão}
 \begin{frame}
-\frametitle{Resultados e Discuss\~oes}
-\pause
-Foi realizado um pr\'{e}-processamento utilizando os dados da detec\c{c}\~ao das emoc\~oes e das intera\c{c}\~oes com a plataforma dos 27 alunos 
-gerando para cada quest\~ao:
-
+\frametitle{Conclusão}
 \begin{itemize}
 \pause
-\item A propor\c{c}\~ao de acertos;
-\pause
-\item O n\'{i}vel de dificuldade;
-\pause
-\item A m\'{e}dia das probabilidades para cada emoc\~ao detectada;
-\pause
-\item A entropia.
+
 \end{itemize}
 
 \end{frame}
 
+
+\begin{frame}
+ \frametitle{Cronograma e Trabalhos futuros}
+ \pause
+ \begin{table}\footnotesize
+\caption{Cronograma de Atividades}
+\label{table:cronog}
+\begin{tabular}{l|ccccc|ccc|}
+\cline{2-9}
+                                                                           & \multicolumn{5}{c|}{\textbf{2018}}                                       & \multicolumn{3}{c|}{\textbf{2019}}         \\ \hline
+\multicolumn{1}{|l|}{\textbf{Atividades}}                                  & \textbf{ago} & \textbf{set} & \textbf{out} & \textbf{nov} & \textbf{dez} & \textbf{jan} & \textbf{fev} & \textbf{mar} \\ \hline
+\multicolumn{1}{|l|}{Desenvolver e avaliar o componente pré-processamento} & x            &              &              &              &              &              &              &              \\
+\multicolumn{1}{|l|}{Analisar sequência de imagens}                        &              & x            &              &              &              &              &              &              \\
+\multicolumn{1}{|l|}{Avaliar experimentalmente outros classificadores}     &              &              & x            &              &              &              &              &              \\
+\multicolumn{1}{|l|}{Implementar e avaliar a MobileNet}                    &              &              &              & x            &              &              &              &              \\
+\multicolumn{1}{|l|}{Avaliar em cenários de uso reais}                     &              &              &              &              & x            & x            &              &              \\
+\multicolumn{1}{|l|}{Escrita da dissertação}                                  &              &              &              & x            & x            & x            & x            & x            \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
 
 
 
@@ -240,6 +281,6 @@ gerando para cada quest\~ao:
   \end{frame}
 
  
- \input{slidesadicionais}
+ %\input{slidesadicionais}
  
 \end{document}

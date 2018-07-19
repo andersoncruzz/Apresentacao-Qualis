@@ -61,11 +61,46 @@
   \tableofcontents
 \end{frame}
 
-\section{Introdu\c{c}\~ao}
+\section{Introdução}
 
 \begin{frame}
 \frametitle{Motivação}
 \pause
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Problema}
+\pause
+Há uma imagem $\omega$ formada por um conjunto de \textit{pixels} (RGB) $\alpha$ pertencente a um conjunto de classes $\sigma$ = \{neutralidade, raiva, felicidade, tristeza, desprezo, medo e surpresa\}, que são as emoções básicas definidas por \citep{ekman1994}, tal que haja uma função $\phi$ que saiba mapear $\omega$ por meio de $\alpha$ para $\sigma$.  
+
+%%%IMAGEM DO PROBLEMA MUITO DIFICIL ESSA DEFINIÇÃO
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Problema}
+Problemas clássicos:
+
+\begin{itemize}
+\pause
+ \item Ausência de iluminação no ambiente;
+ \pause
+ \item Rotação do objeto principal, neste caso a face;
+ \pause
+ \item Escala do objeto principal (face).
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Problema}
+\pause
+\textit{Como aprimorar os métodos de reconhecimento de emoções por meio da expressão facial a fim de permitir a classificação independente das características do ambiente e de indivíduos para o alcance de maior generalização?} 
 
 
 \end{frame}
@@ -100,25 +135,26 @@
 \begin{frame}
 \frametitle{Abordagem Proposta}
 \pause
-\begin{block}{Plataforma Educacional}
-Permite a coleta de imagens faciais e das atividades dos alunos como a sele\c{c}\~ao de 
-respostas e a navega\c{c}\~ao entre os diferentes objetos de aprendizagem.
+\begin{block}{Monitoramento}
+aqui;
 \end{block}
 \pause
-\begin{block}{Classificador de emo\c{c}\~ao}
-Recebe a imagem facial coletada como entrada e retorna as probabilidades \textit{a posteriori} das emo\c{c}\~oes b\'asicas.
+\begin{block}{Pré-Processamento}
+aqui;
 \end{block}
 \pause
-\begin{block}{Anal\'{i}tico}
-Recebe os dados da \textit{Plataforma Educacional} e do \textit{Classificador de Emo\c{c}\~ao} para processar e gerar informa\c{c}\~oes que s\~{a}o 
-\'{u}teis para tutores inteligente, sistemas de recomenda\c{c}\~ao e heur\'isticas em geral.    
+\begin{block}{Rede Neural de Convolução}
+aqui;
+\end{block}
+\begin{block}{alguma coisa}
+aqui;
 \end{block}
 
 \end{frame}
 
 
 \begin{frame}
-\frametitle{Abordagem Proposta}
+\frametitle{Abordagem Proposta - Entrada de Dados }
 \begin{figure}
 \centering
 \includegraphics[scale=0.37]{figuras/arquitetura_1.png}
@@ -128,17 +164,17 @@ Recebe os dados da \textit{Plataforma Educacional} e do \textit{Classificador de
 \end{frame}
 
 \begin{frame}
-\frametitle{Abordagem Proposta}
+\frametitle{Abordagem Proposta - Detecção de Face e Recorte}
 \begin{figure}
 \centering
-\includegraphics[scale=0.37]{figuras/arquitetura_2.png}
+\includegraphics[scale=0.27]{figuras/arquitetura_2.png}
 %\caption{Abordagem Proposta}
 \label{fig:arquitetura2}
 \end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Abordagem Proposta}
+\frametitle{Abordagem Proposta - Pré-Processamento}
 \begin{figure}
 \centering
 \includegraphics[scale=0.37]{figuras/arquitetura_3.png}
@@ -149,17 +185,54 @@ Recebe os dados da \textit{Plataforma Educacional} e do \textit{Classificador de
 
 
 \begin{frame}
-\frametitle{Abordagem Proposta}
+ \frametitle{Abordagem Proposta - Pré-Processamento}
+
 \begin{figure}
 \centering
-\includegraphics[scale=0.37]{figuras/arquitetura_4.png}
+\includegraphics[scale=0.33]{figuras/PreProcessamentoMestrado.png}
+%\caption{Alinhamento de Face}
+\label{fig:preprocessamento}
+\end{figure}
+
+ 
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Abordagem Proposta - Pré-Processamento}
+
+\pause
+\begin{figure}
+\centering
+\includegraphics[scale=0.23]{figuras/face_alinhada.png}
+\caption{Alinhamento de Face}
+\label{fig:face_alinhada}
+\end{figure}
+
+\pause 
+\begin{figure}
+\centering
+\includegraphics[scale=0.23]{figuras/augmentation.png}
+\caption{Aumentação de Dados}
+\label{fig:augmentation}
+\end{figure}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Abordagem Proposta - Classificação}
+\begin{figure}
+\centering
+\includegraphics[scale=0.33]{figuras/arquitetura_4.png}
 %\caption{Abordagem Proposta}
 \label{fig:arquitetura4}
 \end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Abordagem Proposta}
+\frametitle{Abordagem Proposta - Visão Geral}
 \begin{figure}
 \centering
 \includegraphics[scale=0.17]{figuras/arquitetura.png}
@@ -168,49 +241,12 @@ Recebe os dados da \textit{Plataforma Educacional} e do \textit{Classificador de
 \end{figure}
 \end{frame}
 
-\section{Experimento}
-\begin{frame}
-\frametitle{Experimento}
-\begin{itemize}
-\pause
-\item Consistiu em um simulado do ENEM para alunos finalistas do ensino m\'{e}dio;
-\pause
-\item Participaram 27 alunos;
-\pause
-\item O simulado era composto por 40 quest\~{o}es de m\'{u}ltipla escolha com 2 n\'{i}veis de dificuldade;
-\pause
-\item Os assuntos: matem\'{a}tica, l\'{i}ngua portuguesa, qu\'{i}mica, racioc\'{i}nio l\'{o}gico, geografia e hist\'{o}ria;
-\pause
-\item A \textit{Plataforma Educacional} escolhida foi resultado de um projeto de P\&D entre a UFAM e a Samsung;
-\pause
-\item O \textit{Classificador de Emo\c{c}\~ao} foi a API da \textit{Microsoft Cognitives Services} que classifica as 7 emo\c{c}\~oes b\'{a}sicas.
-\end{itemize}
-
-\end{frame}
-
-
-
-
 
 %INICIO RESULTADOS E DISCUSSAO
-\section{Resultados e Discuss\~oes}
+\section{Resultados Parciais}
 \begin{frame}
-\frametitle{Resultados e Discuss\~oes}
-\pause
-Foi realizado um pr\'{e}-processamento utilizando os dados da detec\c{c}\~ao das emoc\~oes e das intera\c{c}\~oes com a plataforma dos 27 alunos 
-gerando para cada quest\~ao:
-
-\begin{itemize}
-\pause
-\item A propor\c{c}\~ao de acertos;
-\pause
-\item O n\'{i}vel de dificuldade;
-\pause
-\item A m\'{e}dia das probabilidades para cada emoc\~ao detectada;
-\pause
-\item A entropia.
-\end{itemize}
-
+\frametitle{Resultados Parciais}
+aqui
 \end{frame}
 
 
@@ -219,20 +255,20 @@ gerando para cada quest\~ao:
 
 
 \section{Conclusão}
+
 \begin{frame}
 \frametitle{Conclusão}
 \begin{itemize}
 \pause
-
+\item complete aqui
 \end{itemize}
-
 \end{frame}
 
 
 \begin{frame}
  \frametitle{Cronograma e Trabalhos futuros}
  \pause
- \begin{table}\footnotesize
+ \begin{table}[]\footnotesize
 \caption{Cronograma de Atividades}
 \label{table:cronog}
 \begin{tabular}{l|ccccc|ccc|}
@@ -252,18 +288,19 @@ gerando para cada quest\~ao:
 
 
 \begin{frame}{Referencias}
-\frametitle{Refer\^encias}
+\frametitle{Referências}
     \tiny{\bibliographystyle{apa} }
     \bibliography{base1}
 \end{frame}
 
 
 \section{Agradecimentos}
- \begin{frame}{Agradecimentos}
+\begin{frame}{Agradecimentos}
 \begin{itemize}
  \item Ao orientador: prof. Barreto; 
 \item A banca: prof. Elaine e prof. Daniel;
 \item A minha companheira: Giselle;
+\item Amigos do grupo de pesquisa;
 \item A plateia;
 \end{itemize}
 
@@ -272,7 +309,7 @@ gerando para cada quest\~ao:
   \begin{frame}{Agradecimentos}
   \begin{center}
  
-  \textcolor{VerdeUFAM}{\Large \textbf{Obrigado pela sua aten\c{c}\~ao!}} \\
+  \textcolor{VerdeUFAM}{\Large \textbf{Obrigado pela sua atenção!}} \\
   \vspace*{20px}
   \textit{\textbf{Anderson Cruz}} \\
   \textit{\textbf{aac@icomp.ufam.edu.br}}

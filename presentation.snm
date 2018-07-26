@@ -14,12 +14,10 @@
 \beamer@slide {fig:arquitetura1}{21}
 \beamer@slide {fig:arquitetura2}{22}
 \beamer@slide {fig:arquitetura3}{23}
-\beamer@slide {fig:preprocessamento}{24}
-\beamer@slide {fig:face_alinhada}{25}
-\beamer@slide {fig:augmentation}{25}
-\beamer@slide {fig:arquitetura4}{28}
-\beamer@slide {fig:arquitetura}{29}
-\beamer@slide {my-label}{34}
+\beamer@slide {fig:face_alinhada}{24}
+\beamer@slide {fig:augmentation}{24}
+\beamer@slide {fig:arquitetura3}{27}
+\beamer@slide {my-label}{32}
 \beamer@slide {table:basesdivisao}{43}
 \beamer@slide {table:distclasse}{44}
 \beamer@slide {fig:arquitetura4}{45}

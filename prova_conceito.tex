@@ -1,0 +1,208 @@
+\section{Prova de Conceito}
+
+\begin{frame}
+ \frametitle{Prova de Conceito}
+ \begin{block}{Objetivos}
+\begin{itemize}
+%\justify
+\pause
+\item Propor um framework para detectar estados emocionais de estudantes baseado em reconhecimento de expressões faciais no contexto das plataformas educacionais;
+\pause
+\item Monitorar as emoções dos estudantes durante uma avaliação de múltipla escolha (simulado do ENEM);
+\pause
+\item Correlacionar os estados emocionais detectados e a entropia das emoções com o desempenho durante a avaliação.
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Prova de Conceito - Discussões}
+\begin{table}[]\footnotesize
+\centering
+\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
+e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+\hline
+                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
+\textbf{Tristeza}     & \textbf{-0.33}                & 0.27                          \\ \hline
+\textbf{Neutralidade} & \textbf{0.36}                 & \textbf{-0.48}                \\ \hline
+\textbf{Desprezo}     & -0.15                         & \textbf{0.30}                 \\ \hline
+Desgosto              & -0.13                         & 0.07                          \\ \hline
+Raiva                 & -0.14                         & -0.08                         \\ \hline
+Surpresa              & 0.07                          & 0.24                          \\ \hline
+Medo                  & -0.06                         & 0.14                          \\ \hline
+\textbf{Felicidade}   & -0.14                         & \textbf{0.31}                 \\ \hline
+\textbf{Entropia}     & -0.12                         & \textbf{0.36}                 \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Prova de Conceito - Discussões}
+\begin{block}{Estimular emo\c{c}\~oes diferentes da neutralidade durante a avalia\c{c}\~ao favorece o desempenho dos alunos}
+\begin{itemize}
+\pause
+\item Neutralidade possui uma correla\c{c}\~ao negativa com a propor\c{c}\~ao de acertos;
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Prova de Conceito - Discussões}
+\begin{table}[]\footnotesize
+\centering
+\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
+e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+\hline
+                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
+Tristeza	     & -0.33                & 0.27                          \\ \hline
+\small \textbf{Neutralidade} & 0.36                 & \small \textbf{-0.48}                \\ \hline
+Desprezo     		& -0.15                         & 0.30                 \\ \hline
+Desgosto              & -0.13                         & 0.07                          \\ \hline
+Raiva                 & -0.14                         & -0.08                         \\ \hline
+Surpresa              & 0.07                          & 0.24                          \\ \hline
+Medo                  & -0.06                         & 0.14                          \\ \hline
+Felicidade   		& -0.14                         & 0.31                 \\ \hline
+Entropia     		& -0.12                         & 0.36                 \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Prova de Conceito - Discussões}
+\begin{block}{Estimular emo\c{c}\~oes diferentes da neutralidade durante a avalia\c{c}\~ao favorece o desempenho dos alunos}
+\begin{itemize}
+\item Neutralidade possui uma correla\c{c}\~ao negativa com a propor\c{c}\~ao de acertos;
+\pause
+\item Felicidade e desprezo possui correla\c{c}\~ao positiva com a propor\c{c}\~ao de acertos.
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Prova de Conceito - Discussões}
+\begin{table}[]\footnotesize
+\centering
+\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
+e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+\hline
+                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
+Tristeza	     & -0.33                & 0.27                          \\ \hline
+Neutralidade & 0.36                 & -0.48                \\ \hline
+\small \textbf{Desprezo}     		& -0.15                         & \small \textbf{0.30}                 \\ \hline
+Desgosto              & -0.13                         & 0.07                          \\ \hline
+Raiva                 & -0.14                         & -0.08                         \\ \hline
+Surpresa              & 0.07                          & 0.24                          \\ \hline
+Medo                  & -0.06                         & 0.14                          \\ \hline
+\small \textbf{Felicidade}   		& -0.14                         & \small \textbf{0.31}                 \\ \hline
+Entropia     		& -0.12                         & 0.36                 \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Prova de Conceito - Discussões}
+\begin{block}{Estimular emo\c{c}\~oes diferentes da neutralidade durante a avalia\c{c}\~ao favorece o desempenho dos alunos}
+\begin{itemize}
+\item Neutralidade possui uma correla\c{c}\~ao negativa com a propor\c{c}\~ao de acertos;
+\item Felicidade e desprezo possui correla\c{c}\~ao positiva com a propor\c{c}\~ao de acertos;
+\pause
+\item Entropia das emo\c{c}\~oes possui correla\c{c}\~ao positiva com a propor\c{c}\~ao de acertos.
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Prova de Conceito - Discussões}
+\begin{table}[]\footnotesize
+\centering
+\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
+e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+\hline
+                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
+Tristeza	     & -0.33                & 0.27                          \\ \hline
+Neutralidade & 0.36                 & -0.48                \\ \hline
+Desprezo     		& -0.15                         & 0.30                 \\ \hline
+Desgosto              & -0.13                         & 0.07                          \\ \hline
+Raiva                 & -0.14                         & -0.08                         \\ \hline
+Surpresa              & 0.07                          & 0.24                          \\ \hline
+Medo                  & -0.06                         & 0.14                          \\ \hline
+Felicidade   		& -0.14                         & 0.31                 \\ \hline
+\small \textbf{Entropia}     		& -0.12                         & \small \textbf{0.36}                 \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Prova de Conceito - Discussões}
+\begin{block}{Neutralidade}
+\begin{itemize}
+\pause
+\item A emo\c{c}\~ao mais frequente;
+\pause
+\item Ind\'{i}cio da neutralidade assemelhar com estado de concentra\c{c}\~ao;
+\pause
+\item Neutralidade possui uma correla\c{c}\~ao positiva com quest\~oes dif\'{i}ceis;
+
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Prova de Conceito - Discussões}
+\begin{table}[]\footnotesize
+\centering
+\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
+e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+\hline
+                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
+Tristeza	     & -0.33                & 0.27                          \\ \hline
+\small \textbf{Neutralidade} & \small \textbf{0.36}                 & -0.48                \\ \hline
+Desprezo     		& -0.15                         & 0.30                 \\ \hline
+Desgosto              & -0.13                         & 0.07                          \\ \hline
+Raiva                 & -0.14                         & -0.08                         \\ \hline
+Surpresa              & 0.07                          & 0.24                          \\ \hline
+Medo                  & -0.06                         & 0.14                          \\ \hline
+Felicidade   		& -0.14                         & 0.31                 \\ \hline
+Entropia     		& -0.12                         & 0.36                 \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Prova de Conceito - Discussões}
+\begin{block}{Neutralidade}
+\begin{itemize}
+\item A emo\c{c}\~ao mais frequente;
+\item Ind\'{i}cio da neutralidade assemelhar com estado de concentra\c{c}\~ao;
+\item Neutralidade possui uma correla\c{c}\~ao positiva com quest\~oes dif\'{i}ceis;
+\pause
+\item Importante identificar os casos diferentes de neutralidade por serem menos frequentes 
+e indicar alguma oportunidade de um tutor inteligente atuar.
+\end{itemize}
+\end{block}
+
+\end{frame}
+ 

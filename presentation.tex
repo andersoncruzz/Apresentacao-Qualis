@@ -99,15 +99,15 @@
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Contexto}
-\begin{figure}
-\centering
-\includegraphics[scale=0.39]{figuras/contexto_3.png}
-%\caption{Abordagem Proposta}
-\label{fig:problema1}
-\end{figure}
-\end{frame}
+%\begin{frame}
+%\frametitle{Contexto}
+%\begin{figure}
+%\centering
+%\includegraphics[scale=0.39]{figuras/contexto_3.png}
+%%%%\caption{Abordagem Proposta}
+%\label{fig:problema1}
+%\end{figure}
+%\end{frame}
 
 \begin{frame}
 \frametitle{Motivação}
@@ -213,7 +213,7 @@
 \begin{block}{Objetivo Geral:}
 \begin{itemize}
 \pause
-\item Propor um método para reconhecer emoção humana por expressão facial para classificar emoções básicas em múltiplas faces de uma imagem e comparar a eficácia em cenários de uso real;
+\item Propor um método para reconhecer emoção humana por expressão facial para classificar emoções básicas em múltiplas faces de uma imagem e comparar a eficácia em cenários de uso real
 \end{itemize}
 \end{block}
 
@@ -222,11 +222,11 @@
 \begin{block}{Objetivos Específicos:}
 \begin{itemize}
 \pause
- \item Propor técnicas de eliminação de ruídos e detecção com recorte das diversas faces de uma imagem;
+ \item Propor técnicas de eliminação de ruídos e detecção com recorte das diversas faces de uma imagem
  \pause
- \item Classificar cada face detectada separadamente estimando a probabilidade para cada emoção básica;
+ \item Classificar cada face detectada separadamente estimando a probabilidade para cada emoção básica
  \pause
- \item Avaliar experimentalmente a solução proposta visando a comparação da eficácia.
+ \item Avaliar experimentalmente a solução proposta visando a comparação da eficácia
 \end{itemize}
 \end{block}
 \end{frame}
@@ -353,214 +353,7 @@
 \end{frame}
 
 
-\section{Prova de Conceito}
 
-\begin{frame}
- \frametitle{Prova de Conceito}
- \begin{block}{Objetivos}
-\begin{itemize}
-%\justify
-\pause
-\item Propor um framework para detectar estados emocionais de estudantes baseado em reconhecimento de expressões faciais no contexto das plataformas educacionais;
-\pause
-\item Monitorar as emoções dos estudantes durante uma avaliação de múltipla escolha (simulado do ENEM);
-\pause
-\item Correlacionar os estados emocionais detectados e a entropia das emoções com o desempenho durante a avaliação;
-\end{itemize}
-\end{block}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Prova de Conceito - Discussões}
-\begin{table}[]\footnotesize
-\centering
-\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
-e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
-\label{my-label}
-\begin{tabular}{|c|c|c|}
-\hline
-                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
-\textbf{Tristeza}     & \textbf{-0.33}                & 0.27                          \\ \hline
-\textbf{Neutralidade} & \textbf{0.36}                 & \textbf{-0.48}                \\ \hline
-\textbf{Desprezo}     & -0.15                         & \textbf{0.30}                 \\ \hline
-Desgosto              & -0.13                         & 0.07                          \\ \hline
-Raiva                 & -0.14                         & -0.08                         \\ \hline
-Surpresa              & 0.07                          & 0.24                          \\ \hline
-Medo                  & -0.06                         & 0.14                          \\ \hline
-\textbf{Felicidade}   & -0.14                         & \textbf{0.31}                 \\ \hline
-\textbf{Entropia}     & -0.12                         & \textbf{0.36}                 \\ \hline
-\end{tabular}
-\end{table}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Prova de Conceito - Discussões}
-\begin{block}{Estimular emo\c{c}\~oes diferentes da neutralidade durante a avalia\c{c}\~ao favorece o desempenho dos alunos}
-\begin{itemize}
-\pause
-\item Neutralidade possui uma correla\c{c}\~ao negativa com a propor\c{c}\~ao de acertos;
-\end{itemize}
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Prova de Conceito - Discussões}
-\begin{table}[]\footnotesize
-\centering
-\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
-e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
-\label{my-label}
-\begin{tabular}{|c|c|c|}
-\hline
-                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
-Tristeza	     & -0.33                & 0.27                          \\ \hline
-\small \textbf{Neutralidade} & 0.36                 & \small \textbf{-0.48}                \\ \hline
-Desprezo     		& -0.15                         & 0.30                 \\ \hline
-Desgosto              & -0.13                         & 0.07                          \\ \hline
-Raiva                 & -0.14                         & -0.08                         \\ \hline
-Surpresa              & 0.07                          & 0.24                          \\ \hline
-Medo                  & -0.06                         & 0.14                          \\ \hline
-Felicidade   		& -0.14                         & 0.31                 \\ \hline
-Entropia     		& -0.12                         & 0.36                 \\ \hline
-\end{tabular}
-\end{table}
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{Prova de Conceito - Discussões}
-\begin{block}{Estimular emo\c{c}\~oes diferentes da neutralidade durante a avalia\c{c}\~ao favorece o desempenho dos alunos}
-\begin{itemize}
-\item Neutralidade possui uma correla\c{c}\~ao negativa com a propor\c{c}\~ao de acertos;
-\pause
-\item Felicidade e desprezo possui correla\c{c}\~ao positiva com a propor\c{c}\~ao de acertos.
-\end{itemize}
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Prova de Conceito - Discussões}
-\begin{table}[]\footnotesize
-\centering
-\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
-e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
-\label{my-label}
-\begin{tabular}{|c|c|c|}
-\hline
-                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
-Tristeza	     & -0.33                & 0.27                          \\ \hline
-Neutralidade & 0.36                 & -0.48                \\ \hline
-\small \textbf{Desprezo}     		& -0.15                         & \small \textbf{0.30}                 \\ \hline
-Desgosto              & -0.13                         & 0.07                          \\ \hline
-Raiva                 & -0.14                         & -0.08                         \\ \hline
-Surpresa              & 0.07                          & 0.24                          \\ \hline
-Medo                  & -0.06                         & 0.14                          \\ \hline
-\small \textbf{Felicidade}   		& -0.14                         & \small \textbf{0.31}                 \\ \hline
-Entropia     		& -0.12                         & 0.36                 \\ \hline
-\end{tabular}
-\end{table}
-\end{frame}
-
-
-
-
-\begin{frame}
-\frametitle{Prova de Conceito - Discussões}
-\begin{block}{Estimular emo\c{c}\~oes diferentes da neutralidade durante a avalia\c{c}\~ao favorece o desempenho dos alunos}
-\begin{itemize}
-\item Neutralidade possui uma correla\c{c}\~ao negativa com a propor\c{c}\~ao de acertos;
-\item Felicidade e desprezo possui correla\c{c}\~ao positiva com a propor\c{c}\~ao de acertos;
-\pause
-\item Entropia das emo\c{c}\~oes possui correla\c{c}\~ao positiva com a propor\c{c}\~ao de acertos.
-\end{itemize}
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Prova de Conceito - Discussões}
-\begin{table}[]\footnotesize
-\centering
-\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
-e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
-\label{my-label}
-\begin{tabular}{|c|c|c|}
-\hline
-                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
-Tristeza	     & -0.33                & 0.27                          \\ \hline
-Neutralidade & 0.36                 & -0.48                \\ \hline
-Desprezo     		& -0.15                         & 0.30                 \\ \hline
-Desgosto              & -0.13                         & 0.07                          \\ \hline
-Raiva                 & -0.14                         & -0.08                         \\ \hline
-Surpresa              & 0.07                          & 0.24                          \\ \hline
-Medo                  & -0.06                         & 0.14                          \\ \hline
-Felicidade   		& -0.14                         & 0.31                 \\ \hline
-\small \textbf{Entropia}     		& -0.12                         & \small \textbf{0.36}                 \\ \hline
-\end{tabular}
-\end{table}
-\end{frame}
-
-\begin{frame}
-\frametitle{Prova de Conceito - Discussões}
-\begin{block}{Neutralidade}
-\begin{itemize}
-\pause
-\item A emo\c{c}\~ao mais frequente;
-\pause
-\item Ind\'{i}cio da neutralidade assemelhar com estado de concentra\c{c}\~ao;
-\pause
-\item Neutralidade possui uma correla\c{c}\~ao positiva com quest\~oes dif\'{i}ceis;
-
-\end{itemize}
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Prova de Conceito - Discussões}
-\begin{table}[]\footnotesize
-\centering
-\caption{Resultado​ ​da​ ​correla\c{c}\~ao​ ​de​ ​Pearson​ ​para​ ​cada​ ​emo\c{c}\~ao​ ​detectada
-e​ ​a​ ​entropia​ ​contra​ ​os​ ​atributos​ ​das​ ​quest\~oes}
-\label{my-label}
-\begin{tabular}{|c|c|c|}
-\hline
-                      & \textbf{Nível de Dificuldade} & \textbf{Proporção de Acertos} \\ \hline
-Tristeza	     & -0.33                & 0.27                          \\ \hline
-\small \textbf{Neutralidade} & \small \textbf{0.36}                 & -0.48                \\ \hline
-Desprezo     		& -0.15                         & 0.30                 \\ \hline
-Desgosto              & -0.13                         & 0.07                          \\ \hline
-Raiva                 & -0.14                         & -0.08                         \\ \hline
-Surpresa              & 0.07                          & 0.24                          \\ \hline
-Medo                  & -0.06                         & 0.14                          \\ \hline
-Felicidade   		& -0.14                         & 0.31                 \\ \hline
-Entropia     		& -0.12                         & 0.36                 \\ \hline
-\end{tabular}
-\end{table}
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{Prova de Conceito - Discussões}
-\begin{block}{Neutralidade}
-\begin{itemize}
-\item A emo\c{c}\~ao mais frequente;
-\item Ind\'{i}cio da neutralidade assemelhar com estado de concentra\c{c}\~ao;
-\item Neutralidade possui uma correla\c{c}\~ao positiva com quest\~oes dif\'{i}ceis;
-\pause
-\item Importante identificar os casos diferentes de neutralidade por serem menos frequentes 
-e indicar alguma oportunidade de um tutor inteligente atuar.
-\end{itemize}
-\end{block}
-
-\end{frame}
- 
  
 
 \section{Experimento}
@@ -570,11 +363,14 @@ e indicar alguma oportunidade de um tutor inteligente atuar.
 \begin{block}{Objetivos}
 \begin{itemize}
 \pause
-\item Realizar um estudo comparativo entre AlexNet, Inception-V3 e ResNet;
+\item Implementar parcialmente a abordagem proposta
 \pause
-\item Avaliar os modelos usando as métricas de precisão, revocação, f1-score e a acurácia;
+\item Realizar um estudo comparativo entre as arquiteturas AlexNet, Inception-V3 e ResNet
 \pause
-\item Utilizar uma base de dados oriunda da natureza e outra do laboratório;
+\item Avaliar os modelos usando as métricas de precisão, revocação, f1-score e a acurácia
+\pause
+\item Analisar os resultados de uma base de dados oriunda da natureza e outra do laboratório
+
 \end{itemize}
 \end{block} 
 \end{frame}
@@ -585,11 +381,11 @@ e indicar alguma oportunidade de um tutor inteligente atuar.
 \begin{block}{Materiais}
 \begin{itemize}
 \pause
-\item \textit{Framework Tensorflow} e \textit{TFLearn};
+\item \textit{Framework Tensorflow} e \textit{TFLearn}
 \pause
-\item \textit{OpenCV 3.0};
+\item \textit{OpenCV 3.0}
 \pause
-\item \textit{GPU NVIDIA GEFORCE 930}, \textit{Intel Core-i7} e \textit{16 GB de RAM DDR4}.
+\item \textit{GPU NVIDIA GEFORCE 930}, \textit{Intel Core-i7} e \textit{16 GB de RAM DDR4}
 
 \end{itemize}
 \end{block} 
@@ -602,7 +398,7 @@ e indicar alguma oportunidade de um tutor inteligente atuar.
 \begin{table}
 \tiny
 \centering
-\caption{As bases de dados foram concatenadas e divididas em três bases: treino, teste e validação. Na seguinte porcentagem: 50\% para treino e 25\% para teste e validação. }
+\caption{As bases de dados foram concatenadas e divididas em três bases: treino, teste e validação. Na seguinte porcentagem: 50\% para treino e 25\% para teste e 25\% validação }
 \label{table:basesdivisao}
 \begin{tabular}{lcccc}
 \hline
@@ -626,7 +422,7 @@ Total de Imagens       & 39955                                       & 19979    
 \begin{table}[]
 \tiny
 \centering
-\caption{Distribuição das classes (emoções) nas bases de treino, teste e validação. As classes também foram divididas em: 50\% para treino e 25\% para teste e validação.}
+\caption{Distribuição das classes (emoções) nas bases de treino, teste e validação. As classes também foram divididas em: 50\% para treino e 25\% para teste e 25\% validação}
 \label{table:distclasse}
 \begin{tabular}{lcccc}
 \hline
@@ -649,20 +445,20 @@ Total de Imagens & 39955                                       & 19979          
 \begin{figure}
 \centering
 \includegraphics[scale=0.32]{figuras/loss-val.png}
-\caption{Função de perda na base de Validação}
+\caption{Função de perda na base de Teste}
 \label{fig:arquitetura4}
 \end{figure}
 \end{frame}
 
-\begin{frame}
-\frametitle{Experimento}
-\begin{figure}
-\centering
-\includegraphics[scale=0.32]{figuras/accuracy_val.png}
-\caption{Acurácia na base de Validação}
-\label{fig:arquitetura4}
-\end{figure}
-\end{frame}
+%\begin{frame}
+%\frametitle{Experimento}
+%\begin{figure}
+%\centering
+%\includegraphics[scale=0.32]{figuras/accuracy_val.png}
+%\caption{Acurácia na base de Teste}
+%\label{fig:arquitetura4}
+%\end{figure}
+%\end{frame}
 
 
 
@@ -673,7 +469,7 @@ Total de Imagens & 39955                                       & 19979          
 \begin{table}[]
 \tiny
 \centering
-\caption{Resultados experimentais das redes neurais de convolução avaliando a base de validação geral.}
+\caption{Resultados experimentais das redes neurais de convolução avaliando a base de validação geral}
 \label{table:resultsexp}
 \begin{tabular}{llcccc}
 \hline
@@ -731,9 +527,9 @@ Total de Imagens & 39955                                       & 19979          
  \begin{block}{Discussão}
 \begin{itemize}
 \pause
-\item A experimentação na base de validação geral assemelha-se a uma medição do cenário real;
+\item A experimentação na base de validação geral assemelha-se a uma medição do cenário real
 \pause
-\item A ResNet obteve os melhores resultados alcançando 75.7\% em acurácia, enquanto a Alexnet 71.2\% e a Inception-V3 70.1\%;
+\item A ResNet obteve os melhores resultados alcançando 75.7\% em acurácia, enquanto a Alexnet 71.2\% e a Inception-V3 70.1\%
 \end{itemize}
 \end{block}
 \end{frame}
@@ -744,7 +540,7 @@ Total de Imagens & 39955                                       & 19979          
 \begin{table}[]
 \tiny
 \centering
-\caption{Resultados experimentais das redes neurais de convolução avaliando a base de validação geral.}
+\caption{Resultados experimentais das redes neurais de convolução avaliando a base de validação geral}
 \label{table:resultsexp}
 \begin{tabular}{llcccc}
 \hline
@@ -778,7 +574,47 @@ Total de Imagens & 39955                                       & 19979          
 \end{frame}
 
 
-
+\begin{frame}
+ \frametitle{Resultados Parciais}
+\begin{table}[]
+\tiny
+\centering
+\caption{(*) Significa que a rede foi treinada (\emph{fine-tuning}) por duas vezes.}
+\label{my-label}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Arquitetura} & \textbf{Trabalho} & \textbf{Base de Treino} & \textbf{Base de Validação} & \textbf{Acurácia} \\ \hline
+\multirow{15}{*}{AlexNet} & \multirow{3}{*}{\cite{art1}} & CK+ & CK+ & 99.1\% \\ \cline{3-5} 
+ &  & CK+ & JAFFE & 83.11\% \\ \cline{3-5} 
+ &  & JAFFE & JAFFE & 87.7\% \\ \cline{2-5} 
+ & \multirow{2}{*}{\cite{art2}} & JAFFE & JAFFE & 76.7\% \\ \cline{3-5} 
+ &  & CK+ & CK+ & 80.3\% \\ \cline{2-5} 
+ & \cite{art4} & FER & FER & 73.73\% \\ \cline{2-5} 
+ & \multirow{2}{*}{\cite{art7}} & FER & FER & 76.9\% \\ \cline{3-5} 
+ &  & CK+ & CK+ & 97.3\% \\ \cline{2-5} 
+ & \cite{art9} & CK+ & CK+ & 96.04\% \\ \cline{2-5} 
+ & \multirow{2}{*}{\cite{art11}} & CK+ & CK+ & 98.7\% \\ \cline{3-5} 
+ &  & MMI & MMI & 98.6\% \\ \cline{2-5} 
+ & \cite{art13}* & FER/EmotiW & FER/EmotiW & 55.6\% \\ \cline{2-5} 
+ & \cite{art14} & CK+/FER & CK+/FER & 86.54\% \\ \cline{2-5} 
+ & \multirow{2}{*}{\cite{art15}} & CIFE & CIFE & 81.5\% \\ \cline{3-5} 
+ &  & CK+ & CK+ & 83\% \\ \hline
+\multirow{2}{*}{VGG} & \cite{art8} & FER+ & FER+ & 84.9\% \\ \cline{2-5} 
+ & \cite{art13}* & FER/EmotiW & FER/EmotiW & 52.1\% \\ \hline
+GoogLeNet & \cite{art10} & FER/SFEW2.0 & FER/SFEW2.0 & 71.3\% \\ \hline
+\multirow{10}{*}{Ensemble} & \multirow{4}{*}{\cite{art3}} & FER & FER-Private & 69.96\% \\ \cline{3-5} 
+ &  & FER & CK+ & 76.05\% \\ \cline{3-5} 
+ &  & FER & JAFFE & 50.70\% \\ \cline{3-5} 
+ &  & FER & EmotiW & 34.09\% \\ \cline{2-5} 
+ & \cite{art5} & FER & FER & 65.03\% \\ \cline{2-5} 
+ & \multirow{5}{*}{\cite{art6}} & \multirow{5}{*}{FER/SFEW} & FER-Test & 66.67\% \\ \cline{4-5} 
+ &  &  & SFEW & 64.84\% \\ \cline{4-5} 
+ &  &  & CK+ & 65.54\% \\ \cline{4-5} 
+ &  &  & KDEF & 50.66\% \\ \cline{4-5} 
+ &  &  & JAFFE & 49.17\% \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
 
 
 
@@ -786,10 +622,10 @@ Total de Imagens & 39955                                       & 19979          
 \frametitle{Resultados Parciais}
  \begin{block}{Discussão}
 \begin{itemize}
-\item A experimentação na base de validação geral assemelha-se a uma medição do cenário real;
-\item A ResNet obteve os melhores resultados alcançando 75.7\% em acurácia, enquanto a Alexnet 71.2\% e a Inception-V3 70.1\%;
+\item A experimentação na base de validação geral assemelha-se a uma medição do cenário real
+\item A ResNet obteve os melhores resultados alcançando 75.7\% em acurácia, enquanto a Alexnet 71.2\% e a Inception-V3 70.1\%
 \pause
-\item A emoção com melhor desempenho foi a felicidade com f1-score em 90\%;
+\item A emoção com melhor desempenho foi a felicidade com f1-score em 90\%
 \end{itemize}
 \end{block}
 \end{frame}
@@ -800,7 +636,7 @@ Total de Imagens & 39955                                       & 19979          
 \begin{table}[]
 \tiny
 \centering
-\caption{Resultados experimentais das redes neurais de convolução avaliando a base de validação geral.}
+\caption{Resultados experimentais das redes neurais de convolução avaliando a base de validação geral}
 \label{table:resultsexp}
 \begin{tabular}{llcccc}
 \hline
@@ -841,11 +677,11 @@ Total de Imagens & 39955                                       & 19979          
 \frametitle{Resultados Parciais}
  \begin{block}{Discussão}
 \begin{itemize}
-\item A experimentação na base de validação geral assemelha-se a uma medição do cenário real;
-\item A \textbf{ResNet} obteve os melhores resultados alcançando 75.7\% em acurácia, enquanto a Alexnet 71.2\% e a Inception-V3 70.1\%;
-\item A emoção com melhor desempenho foi a \textbf{felicidade} com f1-score em 90\%;
+\item A experimentação na base de validação geral assemelha-se a uma medição do cenário real
+\item A ResNet obteve os melhores resultados alcançando 75.7\% em acurácia, enquanto a Alexnet 71.2\% e a Inception-V3 70.1\%
+\item A emoção com melhor desempenho foi a felicidade com f1-score em 90\%
 \pause 
-\item A segunda melhor emoção foi a \textbf{surpresa} com f1-score em 84\%;
+\item A segunda melhor emoção foi a surpresa com f1-score em 84\%
 \end{itemize}
 \end{block}
 \end{frame}
@@ -856,7 +692,7 @@ Total de Imagens & 39955                                       & 19979          
 \begin{table}[]
 \tiny
 \centering
-\caption{Resultados experimentais das redes neurais de convolução avaliando a base de validação geral.}
+\caption{Resultados experimentais das redes neurais de convolução avaliando a base de validação geral}
 \label{table:resultsexp}
 \begin{tabular}{llcccc}
 \hline
@@ -896,12 +732,12 @@ Total de Imagens & 39955                                       & 19979          
 \frametitle{Resultados Parciais}
  \begin{block}{Discussão}
 \begin{itemize}
-\item A experimentação na base de validação geral assemelha-se a uma medição do cenário real;
-\item A ResNet obteve os melhores resultados alcançando 75.7\% em acurácia, enquanto a Alexnet 71.2\% e a Inception-V3 70.1\%;
-\item A emoção com melhor desempenho foi a felicidade com f1-score em 90\%;
-\item A segunda melhor emoção foi a surpresa com f1-score em 84\%;
+\item A experimentação na base de validação geral assemelha-se a uma medição do cenário real
+\item A ResNet obteve os melhores resultados alcançando 75.7\% em acurácia, enquanto a Alexnet 71.2\% e a Inception-V3 70.1\%
+\item A emoção com melhor desempenho foi a felicidade com f1-score em 90\%
+\item A segunda melhor emoção foi a surpresa com f1-score em 84\%
 \pause
-\item São duas das três emoções com maiores índices de amostragem;
+\item São duas das três emoções com maiores índices de amostragem
 \end{itemize}
 \end{block}
 \end{frame}
@@ -912,7 +748,7 @@ Total de Imagens & 39955                                       & 19979          
 \begin{table}[]
 \tiny
 \centering
-\caption{Distribuição das classes (emoções) nas bases de treino, teste e validação. As classes também foram divididas em: 50\% para treino e 25\% para teste e validação.}
+\caption{Distribuição das classes (emoções) nas bases de treino, teste e validação. As classes também foram divididas em: 50\% para treino e 25\% para teste e 25\% validação}
 \label{table:distclasse}
 \begin{tabular}{lcccc}
 \hline
@@ -936,7 +772,7 @@ Total de Imagens & 39955                                       & 19979          
  \begin{block}{Discussão}
 \begin{itemize}
 \pause
-\item Em contrapartida, os piores índices de desempenho foram as emoções medo e raiva;
+\item Em contrapartida, os piores índices de desempenho foram as emoções medo e raiva
 
 \end{itemize}
 \end{block}
@@ -949,7 +785,7 @@ Total de Imagens & 39955                                       & 19979          
 \begin{table}[]
 \tiny
 \centering
-\caption{Resultados experimentais das redes neurais de convolução avaliando a base de validação geral.}
+\caption{Resultados experimentais das redes neurais de convolução avaliando a base de validação geral}
 \label{table:resultsexp}
 \begin{tabular}{llcccc}
 \hline
@@ -987,9 +823,9 @@ Total de Imagens & 39955                                       & 19979          
 \frametitle{Resultados Parciais}
  \begin{block}{Discussão}
 \begin{itemize}
-\item Em contrapartida, os piores índices de desempenho foram as emoções medo e raiva;
+\item Em contrapartida, os piores índices de desempenho foram as emoções medo e raiva
 \pause
-\item Coincidentemente duas das três emoções com menores índices de amostragem;
+\item Coincidentemente duas das três emoções com menores índices de amostragem
 \end{itemize}
 \end{block}
 \end{frame}
@@ -1001,7 +837,7 @@ Total de Imagens & 39955                                       & 19979          
 \begin{table}[]
 \tiny
 \centering
-\caption{Distribuição das classes (emoções) nas bases de treino, teste e validação. As classes também foram divididas em: 50\% para treino e 25\% para teste e validação.}
+\caption{Distribuição das classes (emoções) nas bases de treino, teste e validação. As classes também foram divididas em: 50\% para treino e 25\% para teste e 25\% validação}
 \label{table:distclasse}
 \begin{tabular}{lcccc}
 \hline
@@ -1023,12 +859,12 @@ Total de Imagens & 39955                                       & 19979          
 \frametitle{Resultados Parciais}
  \begin{block}{Discussão}
 \begin{itemize}
-\item Em contrapartida, os piores índices de desempenho foram as emoções medo e raiva;
-\item Coincidentemente duas das três emoções com menores índices de amostragem;
+\item Em contrapartida, os piores índices de desempenho foram as emoções medo e raiva
+\item Coincidentemente duas das três emoções com menores índices de amostragem
 \pause
-\item Entretanto, realmente são expressões faciais complicadas. Não havendo um padrão bem definido e envolve vários músculos faciais;
+\item Entretanto, realmente são expressões faciais complicadas. Não havendo um padrão bem definido envolvendo vários músculos faciais
 \pause
-\item Um sistema com requisito de alta precisão nessas duas emoções necessita de outras fontes de dados.
+\item Um sistema com requisito de alta precisão nessas duas emoções necessita de outras fontes de dados
 \end{itemize}
 \end{block}
 \end{frame}
@@ -1039,7 +875,7 @@ Total de Imagens & 39955                                       & 19979          
  \begin{block}{Discussão}
 \begin{itemize}
 \pause
-\item A neutralidade foi uma das três emoções que mais teve amostragem. No entanto, alcançou somente 68\% de f1-score.
+\item A neutralidade foi uma das três emoções que mais teve amostragem. No entanto, alcançou somente 68\% de f1-score
 \end{itemize}
 \end{block}
 \end{frame}
@@ -1051,7 +887,7 @@ Total de Imagens & 39955                                       & 19979          
 \begin{table}[]
 \tiny
 \centering
-\caption{Resultados experimentais das redes neurais de convolução avaliando a base de validação geral.}
+\caption{Resultados experimentais das redes neurais de convolução avaliando a base de validação geral}
 \label{table:resultsexp}
 \begin{tabular}{llcccc}
 \hline
@@ -1089,11 +925,11 @@ Total de Imagens & 39955                                       & 19979          
 \frametitle{Resultados Parciais}
  \begin{block}{Discussão}
 \begin{itemize}
-\item A neutralidade foi uma das três emoções que mais teve amostragem. No entanto, alcançou somente 68\% de f1-score.
+\item A neutralidade foi uma das três emoções que mais teve amostragem. No entanto, alcançou somente 68\% de f1-score
 \pause
-\item A rede neural aprendeu que a neutralidade consiste em nenhum movimento muscular facial;
+\item A rede neural aprendeu que a neutralidade consiste em nenhum movimento muscular facial
 \pause
-\item Portanto, um leve movimento facial a rede tende a classificar em uma das emoções que não seja neutralidade.
+\item Portanto, um leve movimento facial a rede tende a classificar em uma das emoções que não seja neutralidade
 \end{itemize}
 \end{block}
 \end{frame}
@@ -1144,9 +980,15 @@ Total de Imagens & 39955                                       & 19979          
 \frametitle{Resultados Parciais}
  \begin{block}{Discussão}
 \begin{itemize}
+\item A base CK é de origem laboratorial
 \pause
-\item Aqui;
-
+\item A ResNet alcançou 96.9\% de acurácia, enquanto a Alexnet 96\% e a Inception 95.4\%
+\pause
+\item Os trabalhos de \cite{art1}, \cite{art11} e \cite{art7} obtiveram  99.1\%, 98.7\% e 97.3\%, respectivamente, embora não está claro se é na base de teste ou validação
+\pause
+\item Não possui amostra da emoção neutralidade
+\pause
+\item Não houve confusão com a emoção neutralidade
 \end{itemize}
 \end{block}
 \end{frame}
@@ -1196,8 +1038,15 @@ Total de Imagens & 39955                                       & 19979          
  \begin{block}{Discussão}
 \begin{itemize}
 \pause
-\item Aqui;
-
+\item A base FER é de origem natural
+\pause
+\item Analisando a acurácia a ResNet-34 alcançou 60.4\%, enquanto a Alexnet 54.3\% e a Inception-V3 52.9\%
+\pause
+\item O trabalho de \cite{art7} alcançou 76.9\%, \cite{kim2016fusing} conseguiu 73.73\% e \cite{art5} atingiu 65\%, todos estes trabalhos utilizaram a base FER para treino e teste
+\pause
+\item A base FER é uma base difícil para ser aprendida e classificada
+\pause
+\item As faces não tem um padrão de iluminação, variação do fundo do ambiente, distância fixa com câmera, faces com fortes movimentações e emoções com grau de intensidades diferentes
 \end{itemize}
 \end{block}
 \end{frame}
@@ -1206,6 +1055,19 @@ Total de Imagens & 39955                                       & 19979          
 \section{Conclusão}
 \begin{frame}
 \frametitle{Conclusão}
+\begin{block}{Considerações}
+\begin{itemize}
+\pause 
+\item A ResNet foi a melhor arquitetura
+\pause
+\item Imagens oriundas da natureza não influenciam negativamente para classificação em laboratório
+\pause
+\item Um método treinado com as imagens laboratoriais não consegue reconhecer emoções no contexto da natureza
+\pause
+\item Os resultados devem melhorar com a implementação das técnicas como normalização do brilho e contraste, alinhamento da face e aumentação de dados
+
+\end{itemize}
+\end{block}
 
 \end{frame}
 
@@ -1249,11 +1111,11 @@ Total de Imagens & 39955                                       & 19979          
 \section{Agradecimentos}
 \begin{frame}{Agradecimentos}
 \begin{itemize}
- \item Ao orientador: prof. Barreto; 
-\item À banca: prof. Elaine e prof. Daniel;
-\item À minha companheira: Giselle;
-\item Amigos do grupo de pesquisa;
-\item À plateia;
+ \item Ao orientador: prof. Barreto
+\item À banca: prof. Elaine e prof. Daniel
+\item À minha esposa: Giselle
+\item Amigos do grupo de pesquisa
+\item À plateia
 \end{itemize}
 
 \end{frame}
@@ -1270,6 +1132,6 @@ Total de Imagens & 39955                                       & 19979          
   \end{frame}
 
  
- %\input{slidesadicionais}
+ \input{prova_conceito}
  
 \end{document}

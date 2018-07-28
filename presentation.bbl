@@ -1,3 +1,105 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\astroncite{Barsoum et~al.}{2016}]{art8}
+Barsoum, E., Zhang, C., Ferrer, C.~C., and Zhang, Z. (2016).
+\newblock Training deep networks for facial expression recognition with
+  crowd-sourced label distribution.
+\newblock In {\em Proceedings of the 18th ACM International Conference on
+  Multimodal Interaction}, pages 279--283. ACM.
+
+\bibitem[\protect\astroncite{Chen et~al.}{2017}]{art1}
+Chen, X., Yang, X., Wang, M., and Zou, J. (2017).
+\newblock Convolution neural network for automatic facial expression
+  recognition.
+\newblock In {\em Applied System Innovation (ICASI), 2017 International
+  Conference on}, pages 814--817. IEEE.
+
+\bibitem[\protect\astroncite{Guo et~al.}{2016}]{art10}
+Guo, Y., Tao, D., Yu, J., Xiong, H., Li, Y., and Tao, D. (2016).
+\newblock Deep neural networks with relativity learning for facial expression
+  recognition.
+\newblock In {\em Multimedia \& Expo Workshops (ICMEW), 2016 IEEE International
+  Conference on}, pages 1--6. IEEE.
+
+\bibitem[\protect\astroncite{Huang and Lu}{2016}]{art7}
+Huang, Y. and Lu, H. (2016).
+\newblock Deep learning driven hypergraph representation for image-based
+  emotion recognition.
+\newblock In {\em Proceedings of the 18th ACM International Conference on
+  Multimodal Interaction}, pages 243--247. ACM.
+
+\bibitem[\protect\astroncite{Jung et~al.}{2015}]{art14}
+Jung, H., Lee, S., Park, S., Kim, B., Kim, J., Lee, I., and Ahn, C. (2015).
+\newblock Development of deep learning-based facial expression recognition
+  system.
+\newblock In {\em Frontiers of Computer Vision (FCV), 2015 21st Korea-Japan
+  Joint Workshop on}, pages 1--4. IEEE.
+
+\bibitem[\protect\astroncite{Kim et~al.}{2016a}]{art4}
+Kim, B.-K., Dong, S.-Y., Roh, J., Kim, G., and Lee, S.-Y. (2016a).
+\newblock Fusing aligned and non-aligned face information for automatic affect
+  recognition in the wild: A deep learning approach.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition Workshops}, pages 48--57.
+
+\bibitem[\protect\astroncite{Kim et~al.}{2016b}]{kim2016fusing}
+Kim, B.-K., Dong, S.-Y., Roh, J., Kim, G., and Lee, S.-Y. (2016b).
+\newblock Fusing aligned and non-aligned face information for automatic affect
+  recognition in the wild: A deep learning approach.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition Workshops}, pages 48--57.
+
+\bibitem[\protect\astroncite{Li et~al.}{2015}]{art15}
+Li, W., Li, M., Su, Z., and Zhu, Z. (2015).
+\newblock A deep-learning approach to facial expression recognition with candid
+  images.
+\newblock In {\em Machine Vision Applications (MVA), 2015 14th IAPR
+  International Conference on}, pages 279--282. IEEE.
+
+\bibitem[\protect\astroncite{Liu et~al.}{2016}]{art5}
+Liu, K., Zhang, M., and Pan, Z. (2016).
+\newblock Facial expression recognition with cnn ensemble.
+\newblock In {\em Cyberworlds (CW), 2016 International Conference on}, pages
+  163--166. IEEE.
+
+\bibitem[\protect\astroncite{Ng et~al.}{2015}]{art13}
+Ng, H.-W., Nguyen, V.~D., Vonikakis, V., and Winkler, S. (2015).
+\newblock Deep learning for emotion recognition on small datasets using
+  transfer learning.
+\newblock In {\em Proceedings of the 2015 ACM on international conference on
+  multimodal interaction}, pages 443--449. ACM.
+
+\bibitem[\protect\astroncite{Shan et~al.}{2017}]{art2}
+Shan, K., Guo, J., You, W., Lu, D., and Bie, R. (2017).
+\newblock Automatic facial expression recognition based on a deep
+  convolutional-neural-network structure.
+\newblock In {\em Software Engineering Research, Management and Applications
+  (SERA), 2017 IEEE 15th International Conference on}, pages 123--128. IEEE.
+
+\bibitem[\protect\astroncite{Shin et~al.}{2016}]{art6}
+Shin, M., Kim, M., and Kwon, D.-S. (2016).
+\newblock Baseline cnn structure analysis for facial expression recognition.
+\newblock In {\em Robot and Human Interactive Communication (RO-MAN), 2016 25th
+  IEEE International Symposium on}, pages 724--729. IEEE.
+
+\bibitem[\protect\astroncite{Vo and Le}{2016}]{art9}
+Vo, D.~M. and Le, T.~H. (2016).
+\newblock Deep generic features and svm for facial expression recognition.
+\newblock In {\em Information and Computer Science (NICS), 2016 3rd National
+  Foundation for Science and Technology Development Conference on}, pages
+  80--84. IEEE.
+
+\bibitem[\protect\astroncite{Wen et~al.}{2017}]{art3}
+Wen, G., Hou, Z., Li, H., Li, D., Jiang, L., and Xun, E. (2017).
+\newblock Ensemble of deep neural networks with probability-based fusion for
+  facial expression recognition.
+\newblock {\em Cognitive Computation}, pages 1--14.
+
+\bibitem[\protect\astroncite{Yu et~al.}{2016}]{art11}
+Yu, X., Yang, J., Luo, L., Li, W., Brandt, J., and Metaxas, D. (2016).
+\newblock Customized expression recognition for performance-driven cutout
+  character animation.
+\newblock In {\em Applications of Computer Vision (WACV), 2016 IEEE Winter
+  Conference on}, pages 1--9. IEEE.
+
 \end{thebibliography}

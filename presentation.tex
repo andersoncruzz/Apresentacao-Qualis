@@ -417,27 +417,27 @@ Total de Imagens       & 39955                                       & 19979    
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Experimento}
-\begin{table}[]
-\tiny
-\centering
-\caption{Distribuição das classes (emoções) nas bases de treino, teste e validação. As classes também foram divididas em: 50\% para treino e 25\% para teste e 25\% validação}
-\label{table:distclasse}
-\begin{tabular}{lcccc}
-\hline
-\textbf{Classe}  & \multicolumn{1}{l}{\textbf{B. de Treino}} & \multicolumn{1}{l}{\textbf{B. de Teste}} & \multicolumn{1}{l}{\textbf{B. de Validação}} & \multicolumn{1}{l}{\textbf{Total de Imagens}} \\ \hline
-Raiva            & 3299                                        & 1650                                       & 1650                                           & 6599                                          \\
-Desgosto         & 2453                                        & 1226                                       & 1226                                           & 4905                                          \\
-Medo             & 2821                                        & 1411                                       & 1410                                           & 5642                                          \\
-Felicidade       & 13943                                       & 6971                                       & 6971                                           & 27885                                         \\
-Tristeza         & 4349                                        & 2175                                       & 2174                                           & 8698                                          \\
-Surpesa          & 6311                                        & 3156                                       & 3155                                           & 12622                                         \\
-Neutralidade     & 6779                                        & 3390                                       & 3390                                           & 13559                                         \\
-Total de Imagens & 39955                                       & 19979                                      & 19976                                          & 79910                                         \\ \hline
-\end{tabular}
-\end{table}
-\end{frame}
+%\begin{frame}
+%\frametitle{Experimento}
+%\begin{table}[]
+%\tiny
+%\centering
+%\caption{Distribuição das classes (emoções) nas bases de treino, teste e validação. As classes também foram divididas em: 50\% para treino e 25\% para teste e 25\% validação}
+%\label{table:distclasse}
+%\begin{tabular}{lcccc}
+%\hline
+%\textbf{Classe}  & \multicolumn{1}{l}{\textbf{B. de Treino}} & \multicolumn{1}{l}{\textbf{B. de Teste}} & \multicolumn{1}{l}{\textbf{B. de Validação}} & \multicolumn{1}{l}{\textbf{Total de Imagens}} \\ \hline
+%Raiva            & 3299                                        & 1650                                       & 1650                                           & 6599                                          \\
+%Desgosto         & 2453                                        & 1226                                       & 1226                                           & 4905                                          \\
+%Medo             & 2821                                        & 1411                                       & 1410                                           & 5642                                          \\
+%Felicidade       & 13943                                       & 6971                                       & 6971                                           & 27885                                         \\
+%Tristeza         & 4349                                        & 2175                                       & 2174                                           & 8698                                          \\
+%Surpesa          & 6311                                        & 3156                                       & 3155                                           & 12622                                         \\
+%Neutralidade     & 6779                                        & 3390                                       & 3390                                           & 13559                                         \\
+%Total de Imagens & 39955                                       & 19979                                      & 19976                                          & 79910                                         \\ \hline
+%\end{tabular}
+%\end{table}
+%\end{frame}
 
 
 \begin{frame}
@@ -745,25 +745,35 @@ GoogLeNet & \cite{art10} & FER/SFEW2.0 & FER/SFEW2.0 & 71.3\% \\ \hline
 
 \begin{frame}
 \frametitle{Resultados Parciais}
-\begin{table}[]
-\tiny
+\begin{figure}
 \centering
-\caption{Distribuição das classes (emoções) nas bases de treino, teste e validação. As classes também foram divididas em: 50\% para treino e 25\% para teste e 25\% validação}
-\label{table:distclasse}
-\begin{tabular}{lcccc}
-\hline
-\textbf{Classe}  & \multicolumn{1}{l}{\textbf{B. de Treino}} & \multicolumn{1}{l}{\textbf{B. de Teste}} & \multicolumn{1}{l}{\textbf{B. de Validação}} & \multicolumn{1}{l}{\textbf{Total de Imagens}} \\ \hline
-Raiva            & 3299                                        & 1650                                       & 1650                                           & 6599                                          \\
-Desgosto         & 2453                                        & 1226                                       & 1226                                           & 4905                                          \\
-Medo             & 2821                                        & 1411                                       & 1410                                           & 5642                                          \\
-\scriptsize \textbf{Felicidade}       & \scriptsize \textbf{13943}                                       & \scriptsize \textbf{6971}                                       & \scriptsize \textbf{6971}                                           & \scriptsize \textbf{27885}                                         \\
-Tristeza         & 4349                                        & 2175                                       & 2174                                           & 8698                                          \\
-\scriptsize \textbf{Surpesa}          & \scriptsize \textbf{6311}                                        & \scriptsize \textbf{3156}                                       & \scriptsize \textbf{3155}                                           & \scriptsize \textbf{12622}                                         \\
-\scriptsize Neutralidade     & \scriptsize 6779                                        & \scriptsize 3390                                       & \scriptsize 3390                                           & \scriptsize 13559                                         \\
-Total de Imagens & 39955                                       & 19979                                      & 19976                                          & 79910                                         \\ \hline
-\end{tabular}
-\end{table}
+\includegraphics[scale=0.35]{figuras/grafico_emocoes.png}
+\label{fig:arquitetura4}
+\end{figure}
 \end{frame}
+
+
+%\begin{frame}
+%\frametitle{Resultados Parciais}
+%\begin{table}[]
+%\tiny
+%\centering
+%\caption{Distribuição das classes (emoções) nas bases de treino, teste e validação. As classes também foram divididas em: 50\% para treino e 25\% para teste e 25\% validação}
+%\label{table:distclasse}
+%\begin{tabular}{lcccc}
+%\hline
+%\textbf{Classe}  & \multicolumn{1}{l}{\textbf{B. de Treino}} & \multicolumn{1}{l}{\textbf{B. de Teste}} & \multicolumn{1}{l}{\textbf{B. de Validação}} & \multicolumn{1}{l}{\textbf{Total de Imagens}} \\ \hline
+%Raiva            & 3299                                        & 1650                                       & 1650                                           & 6599                                          \\
+%Desgosto         & 2453                                        & 1226                                       & 1226                                           & 4905                                          \\
+%Medo             & 2821                                        & 1411                                       & 1410                                            & 5642                                          \\
+%\scriptsize \textbf{Felicidade}       & \scriptsize \textbf{13943}                                       & \scriptsize \textbf{6971}                                       & \scriptsize \textbf{6971}                                           & \scriptsize \textbf{27885}                                         \\
+%Tristeza         & 4349                                        & 2175                                       & 2174                                           & 8698                                          \\
+%\scriptsize \textbf{Surpesa}          & \scriptsize \textbf{6311}                                        & \scriptsize \textbf{3156}                                       & \scriptsize \textbf{3155}                                           & \scriptsize \textbf{12622}                                         \\
+%\scriptsize Neutralidade     & \scriptsize 6779                                        & \scriptsize 3390                                       & \scriptsize 3390                                           & \scriptsize 13559                                         \\
+%Total de Imagens & 39955                                       & 19979                                      & 19976                                          & 79910                                         \\ \hline
+%\end{tabular}
+%\end{table}
+%\end{frame}
 
 
 
@@ -831,28 +841,37 @@ Total de Imagens & 39955                                       & 19979          
 \end{frame}
 
 
-
 \begin{frame}
-\frametitle{Experimento}
-\begin{table}[]
-\tiny
+\frametitle{Resultados Parciais}
+\begin{figure}
 \centering
-\caption{Distribuição das classes (emoções) nas bases de treino, teste e validação. As classes também foram divididas em: 50\% para treino e 25\% para teste e 25\% validação}
-\label{table:distclasse}
-\begin{tabular}{lcccc}
-\hline
-\textbf{Classe}  & \multicolumn{1}{l}{\textbf{B. de Treino}} & \multicolumn{1}{l}{\textbf{B. de Teste}} & \multicolumn{1}{l}{\textbf{B. de Validação}} & \multicolumn{1}{l}{\textbf{Total de Imagens}} \\ \hline
-\scriptsize \textbf{Raiva}            & \scriptsize \textbf{3299}                                        & \scriptsize \textbf{1650}                                       & \scriptsize \textbf{1650}                                           & \scriptsize \textbf{6599}                                          \\
-\scriptsize Desgosto         & \scriptsize 2453                                        & \scriptsize 1226                                       & \scriptsize 1226                                           & \scriptsize 4905                                          \\
-\scriptsize \textbf{Medo}             & \scriptsize \textbf{2821}                                        & \scriptsize \textbf{1411}                                       & \scriptsize \textbf{1410}                                           & \scriptsize \textbf{5642}                                          \\
-Felicidade       & 13943                                       & 6971                                       & 6971                                           & 27885                                         \\
-Tristeza         & 4349                                        & 2175                                       & 2174                                           & 8698                                          \\
-Surpesa          & 6311                                        & 3156                                       & 3155                                           & 12622                                         \\
-Neutralidade     & 6779                                        & 3390                                       & 3390                                           & 13559                                         \\
-Total de Imagens & 39955                                       & 19979                                      & 19976                                          & 79910                                         \\ \hline
-\end{tabular}
-\end{table}
+\includegraphics[scale=0.35]{figuras/grafico_emocoes.png}
+\label{fig:arquitetura4}
+\end{figure}
 \end{frame}
+
+
+%\begin{frame}
+%\frametitle{Experimento}
+%\begin{table}[]
+%\tiny
+%\centering
+%\caption{Distribuição das classes (emoções) nas bases de treino, teste e validação. As classes também foram divididas em: 50\% para treino e 25\% para teste e 25\% validação}
+%\label{table:distclasse}
+%\begin{tabular}{lcccc}
+%\hline
+%\textbf{Classe}  & \multicolumn{1}{l}{\textbf{B. de Treino}} & \multicolumn{1}{l}{\textbf{B. de Teste}} & \multicolumn{1}{l}{\textbf{B. de Validação}} & \multicolumn{1}{l}{\textbf{Total de Imagens}} \\ \hline
+%\scriptsize \textbf{Raiva}            & \scriptsize \textbf{3299}                                        & \scriptsize \textbf{1650}                                       & \scriptsize \textbf{1650}                                           & \scriptsize \textbf{6599}                                          \\
+%\scriptsize Desgosto         & \scriptsize 2453                                        & \scriptsize 1226                                       & \scriptsize 1226                                           & \scriptsize 4905                                          \\
+%\scriptsize \textbf{Medo}             & \scriptsize \textbf{2821}                                        & \scriptsize \textbf{1411}                                       & \scriptsize \textbf{1410}                                           & \scriptsize \textbf{5642}                                          \\
+%Felicidade       & 13943                                       & 6971                                       & 6971                                           & 27885                                         \\
+%Tristeza         & 4349                                        & 2175                                       & 2174                                           & 8698                                          \\
+%Surpesa          & 6311                                        & 3156                                       & 3155                                           & 12622                                         \\
+%Neutralidade     & 6779                                        & 3390                                       & 3390                                           & 13559                                         \\
+%Total de Imagens & 39955                                       & 19979                                      & 19976                                          & 79910                                         \\ \hline
+%\end{tabular}
+%\end{table}
+%\end{frame}
 
 
 \begin{frame}
@@ -1040,13 +1059,15 @@ Total de Imagens & 39955                                       & 19979          
 \pause
 \item A base FER é de origem natural
 \pause
+\item As faces não tem um padrão de iluminação, variação do fundo do ambiente, distância fixa com câmera, faces com fortes movimentações e emoções com grau de intensidades diferentes
+\pause
 \item Analisando a acurácia a ResNet-34 alcançou 60.4\%, enquanto a Alexnet 54.3\% e a Inception-V3 52.9\%
+
 \pause
 \item O trabalho de \cite{art7} alcançou 76.9\%, \cite{kim2016fusing} conseguiu 73.73\% e \cite{art5} atingiu 65\%, todos estes trabalhos utilizaram a base FER para treino e teste
 \pause
-\item A base FER é uma base difícil para ser aprendida e classificada
-\pause
-\item As faces não tem um padrão de iluminação, variação do fundo do ambiente, distância fixa com câmera, faces com fortes movimentações e emoções com grau de intensidades diferentes
+\item A base FER é difícil para ser aprendida e classificada
+
 \end{itemize}
 \end{block}
 \end{frame}
@@ -1132,6 +1153,65 @@ Total de Imagens & 39955                                       & 19979          
   \end{frame}
 
  
+\begin{frame}
+\frametitle{Free lunch - Slides Adicionais}
+\begin{figure}
+\centering
+\includegraphics[scale=0.25]{figuras/best-model.png}
+\label{fig:arquitetura4}
+\end{figure}
+\end{frame}  
+
+
+\begin{frame}
+  \frametitle{ResNet avaliando base de validação geral - Slides Adicionais}
+\begin{table}[]
+\tiny
+  \centering
+\label{my-label}
+\begin{tabular}{llcccc}
+\hline
+\textbf{Arquitetura}                     & \textbf{Emoção}       & \multicolumn{1}{l}{\textbf{Precisão}} & \multicolumn{1}{l}{\textbf{Revocação}} & \multicolumn{1}{l}{\textbf{F1-score}} & \multicolumn{1}{l}{\textbf{Acurácia}} \\ \hline
+\multirow{8}{*}{ResNet-8600}           & Raiva                 & 0.64                                  & 0.65                                   & 0.64                                  & \multirow{8}{*}{0.753}                \\
+                                         & Desgosto              & 0.73                                  & 0.63                                   & 0.68                                  &                                       \\
+                                         & Medo                  & 0.46                                  & 0.52                                   & 0.49                                  &                                       \\
+                                         & Felicidade            & 0.93                                  & 0.85                                   & 0.89                                  &                                       \\
+                                         & Tristeza              & 0.73                                  & 0.58                                   & 0.65                                  &                                       \\
+                                         & Surpresa              & 0.84                                  & 0.83                                   & 0.84                                  &                                       \\
+                                         & Neutralidade          & 0.6                                   & 0.79                                   & 0.68                                  &                                       \\
+                                         & Média/Total           & 0.77                                  & 0.75                                   & 0.76                                  &                                       \\ \hline
+\multirow{8}{*}{ResNet-9600}           & Raiva                 & 0.37                                  & 0.87                                   & 0.52                                  & \multirow{8}{*}{0.727}                \\
+                                         & Desgosto              & 0.7                                   & 0.65                                   & 0.67                                  &                                       \\
+                                         & Medo                  & 0.58                                  & 0.47                                   & 0.52                                  &                                       \\
+                                         & Felicidade            & 0.91                                  & 0.87                                   & 0.89                                  &                                       \\
+                                         & Tristeza              & 0.71                                  & 0.53                                   & 0.61                                  &                                       \\
+                                         & Surpresa              & 0.82                                  & 0.82                                   & 0.82                                  &                                       \\
+                                         & Neutralidade          & 0.77                                  & 0.55                                   & 0.64                                  &                                       \\
+                                         & Média/Total           & 0.77                                  & 0.73                                   & 0.74                                  &                                       \\ \hline
+
+\multirow{8}{*}{\textbf{ResNet-11250}} & \textbf{Raiva}        & \textbf{0.69}                         & \textbf{0.57}                          & \textbf{0.62}                         & \multirow{8}{*}{\textbf{0.757}}       \\
+                                         & \textbf{Desgosto}     & \textbf{0.79}                         & \textbf{0.66}                          & \textbf{0.72}                         &                                       \\
+                                         & \textbf{Medo}         & \textbf{0.45}                         & \textbf{0.5}                           & \textbf{0.47}                         &                                       \\
+                                         & \textbf{Felicidade}   & \textbf{0.9}                          & \textbf{0.89}                          & \textbf{0.9}                          &                                       \\
+                                         & \textbf{Tristeza}     & \textbf{0.6}                          & \textbf{0.65}                          & \textbf{0.63}                         &                                       \\
+                                         & \textbf{Surpresa}     & \textbf{0.82}                         & \textbf{0.86}                          & \textbf{0.84}                         &                                       \\
+                                         & \textbf{Neutralidade} & \textbf{0.67}                         & \textbf{0.68}                          & \textbf{0.68}                         &                                       \\
+                                         & \textbf{Média/Total}  & \textbf{0.76}                         & \textbf{0.76}                          & \textbf{0.76}                         &                                       \\ \hline
+\multirow{8}{*}{ResNet-14200}          & Raiva                 & 0.74                                  & 0.55                                   & 0.63                                  & \multirow{8}{*}{0.74}                 \\
+                                         & Desgosto              & 0.86                                  & 0.52                                   & 0.65                                  &                                       \\
+                                         & Medo                  & 0.56                                  & 0.48                                   & 0.52                                  &                                       \\
+                                         & Felicidade            & 0.83                                  & 0.92                                   & 0.87                                  &                                       \\
+                                         & Tristeza              & 0.61                                  & 0.69                                   & 0.65                                  &                                       \\
+                                         & Surpresa              & 0.68                                  & 0.9                                    & 0.77                                  &                                       \\
+                                         & Neutralidade          & 0.74                                  & 0.55                                   & 0.63                                  &                                       \\
+                                         & Média/Total           & 0.74                                  & 0.74                                   & 0.73                                  &                                       \\ \hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+
+
  \input{prova_conceito}
  
 \end{document}
